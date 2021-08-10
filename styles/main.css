@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;700;900&display=swap");
 body {
-  background: #ffebc0;
+  background: #fff3dc;
   margin: 0;
   height: 100vh;
   display: -ms-grid;
@@ -8,40 +9,48 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Roboto', 'sans-serif';
+  font-family: 'Nunito', 'sans-serif';
 }
 
-.container__main {
-  width: 30%;
-  background: white;
-  border-radius: 16px;
-  -webkit-clip-path: circle(10% at 0% 0%);
-          clip-path: circle(10% at 0% 0%);
-  -webkit-transition: -webkit-clip-path 0.5s ease-in-out;
-  transition: -webkit-clip-path 0.5s ease-in-out;
-  transition: clip-path 0.5s ease-in-out;
-  transition: clip-path 0.5s ease-in-out, -webkit-clip-path 0.5s ease-in-out;
-}
-
-.container__main .container__inner {
-  background: #ffcb5a;
-  border-radius: 16px;
-  width: 100%;
+.container__inner {
+  background: #c91f09;
   padding: 1em;
+  border-radius: 16px;
+  width: 250px;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
 }
 
-.container__main .container__inner h1 {
+.container__inner:hover {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #ff8800;
+}
+
+.container__inner h1 {
   color: white;
   margin: 0;
 }
 
-.container__main .container__inner p {
+.container__inner p {
   color: white;
   font-size: 0.8rem;
 }
 
-.container__main:hover .inner {
-  -webkit-clip-path: circle(75%);
-          clip-path: circle(75%);
+.container__inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+  position: relative;
+  margin-right: 4%;
+}
+
+.container__inner:hover span {
+  color: rgba(255, 255, 255, 0);
 }
 /*# sourceMappingURL=main.css.map */
