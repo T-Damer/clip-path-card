@@ -1,0 +1,35 @@
+body {
+  background: rgb(255, 235, 192);
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Roboto', 'sans-serif';
+}
+
+.container__main {
+  width: 30%;
+  background: white;
+  border-radius: 16px;
+  clip-path: circle(10% at 0% 0%);
+  transition: clip-path 0.5s ease-in-out;
+  .container__inner {
+    background: rgb(255, 203, 90);
+    border-radius: 16px;
+    width: 100%;
+    padding: 1em;
+
+    h1 {
+      color: white;
+      margin: 0;
+    }
+    p {
+      color: white;
+      font-size: 0.8rem;
+    }
+  }
+  &:hover .inner {
+    clip-path: circle(75%);
+  }
+}
